@@ -1,0 +1,261 @@
+#body {
+	background: url('../img/pw_maze_white.png');
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+/* Style of Links */
+
+.location a{
+	color: inherit;
+	text-decoration:none;
+}
+
+.contact a {
+	color: inherit;
+	text-decoration:none;
+}
+
+.contact a:hover {
+	color: #D0DD2B;
+	cursor: hand;
+}
+
+.location a:hover {
+	color: #D0DD2B;
+	cursor: hand;
+}
+
+/* Header Section */
+.header-cont {
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 2;
+}
+
+.header {
+	height: 50px;
+	width: 1200px;
+	margin: -20px auto 0 auto;
+	padding: 20px 20px;
+	border-radius: 16px;
+	background: rgba(226,75,44,0.8);
+	/* box shadow */
+	-moz-box-shadow:    3px 3px 5px 3px #D3D3D3;
+  	-webkit-box-shadow: 3px 3px 5px 3px #D3D3D3;
+  	box-shadow:         3px 3px 6px 2px #D3D3D3;
+}
+
+/* Text Style */
+.header p {
+	padding-top: 22px;
+	font-family: 'Bigshot One', cursive;
+	font-size: 50px;
+	color: rgba(59,59,61,0.7);
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0,169,224,0.5);
+}
+
+/* Column Boxes */
+#main {
+	width: 1200px;
+	margin: 90px auto 0px auto;
+	height: 850px;
+	border-radius: 6px;
+	position: relative;
+}
+
+.column {
+	height: 680px;
+	width: 330px;
+	border-radius: 6px;
+	float: left;
+	padding: 20px;
+	position: relative; /* absolute positionin (below) is relative to these columns */
+	z-index: 1;
+	/* background gradient */
+	background-image: -ms-linear-gradient(top, #E7F3EF 0%, #73726D 500%);
+	background-image: -moz-linear-gradient(top, #E7F3EF 0%, #73726D 500%);
+	background-image: -o-linear-gradient(top, #E7F3EF 0%, #73726D 500%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E7F3EF), color-stop(5, #73726D));
+	background-image: -webkit-linear-gradient(top, #E7F3EF 0%, #73726D 500%);
+	background-image: linear-gradient(to bottom, #E7F3EF 0%, #73726D 500%);
+	/* box shadow */
+	-moz-box-shadow:    3px 3px 5px 3px #ccc;
+  	-webkit-box-shadow: 3px 3px 5px 3px #ccc;
+  	box-shadow:         3px 3px 5px 3px #ccc;
+}
+
+.col-left {
+	margin: 10px 10px 10px 10px;
+}
+
+.col-center {
+	margin: 10px 25px;
+}
+
+.col-right {
+	margin: 10px 10px 10px 10px;
+}
+
+/* Category Titles */
+.category-icon {
+	width: 100px;
+	color: #98C73D;
+	text-shadow: 1px 1px 1px #ccc;
+	font-size: 80px;
+	position: absolute; /*position relative to first non-static parent*/
+	top: 20px;
+	left: 20px;
+}
+
+.category-text {
+	color: #8C6429;
+	text-shadow: 1px 1px 1px #ccc;
+	margin-left: 100px;
+	margin-bottom: 40px;
+	height: 50px;
+	font-size: 28px;
+	font-weight: bold;
+	font-family: 'Lato', sans-serif;
+}
+
+p.category-name {
+	line-height: 50px;
+}
+
+p.category-name-long {
+	line-height: 30px;
+	margin-top: -4px;
+}
+
+.col-center .category-text {
+	margin-left: 60px;
+}
+
+/* this is col-center style */
+ul.skill-list {
+	padding-right: 20px;
+	text-align: center;
+}
+
+
+li.skill {
+	list-style-type: none;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #98a21a;
+}
+
+li.description {
+	list-style-type: none;
+}
+
+/* Table Styling */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width:100%
+}
+
+tbody td.location {
+	font-size: 18px;
+	color: #E24B2C;
+	font-weight: bold;
+	padding: 0px 5px 0px 5px;
+}
+
+tbody td.year {
+	font-size: 14px;
+	font-family: 'Rationale', sans-serif;
+	color: #00A9E0;
+	font-weight: bold;
+	text-align: right;
+	padding: 0px 5px 0px 5px;
+}
+
+tbody td.description, li.description {
+	font-size: 14px;
+	color: #73726D;
+	padding: 0px 5px 10px 5px;
+}
+
+span {
+	font-size: 14px;
+	font-weight: bold;
+	color: #8C6429;
+	display: block;
+}
+
+#education td.location {
+	width: 250px;
+}
+
+#work td.location {
+	width: 200px;
+}
+
+#work td.year {
+	width: 80px;
+}
+
+/* Footer Style */
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:60px;
+   width:100%;
+   background: #3B3B3D;
+   z-index: 2;
+}
+
+td.chat-icon {
+	width: 40px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	height: 30px;
+}
+
+td.chat {
+	padding-top: 10px;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 30px;
+	font-family: 'Cookie', cursive;
+	color: #67CDDC;
+}
+
+span.chat-name {
+	font-size: 30px;
+	color: #D0DD2B;
+	display: inline-block;
+}
+
+td.footer-cont1 {
+	width: 200px;
+}
+
+td.footer-cont2 {
+	width: 200px;
+}
+
+.icon-linkedin, .icon-phone, .icon-facetime-video, .icon-envelope-alt {
+	color: #D0DD2B
+}
+
+.icon-coffee {
+	font-size: 50px;
+	color: #67CDDC ;
+}
+
+li.contact {
+	color: #ccc;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+
